@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/style.css">
+     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <title>Gallery | Gicha Expeditions</title>
+  <style>
+    
+    h1 {
+      text-align: center;
+      padding-top: 90px;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      color: #2d572c;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transform: scale(0.95);
+      opacity: 0;
+      transition: all 0.6s ease;
+    }
+
+    .gallery-item.visible {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <header class="header">
+  <div class="logo">Gicha Expeditions</div>
+  <nav class="nav" id="navMenu">
+    <ul>
+
+      <li><a href="index.html">Back To HomePage</a></li>
+    </ul>
+  </nav>
+  <div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+  <h1><i class="fas fa-images"></i> Our Expedition Gallery</h1>
+    <div class="gallery" id="gallery">
+    <!-- 72 IMAGES — Replace src with your actual image paths -->
+    <!-- Images start -->
+    <div class="gallery-item"><img src="images/2.jpg" alt="Gallery Image 1"></div>
+    <div class="gallery-item"><img src="images/10.jpg" alt="Gallery Image 2"></div>
+    <div class="gallery-item"><img src="images/3.jpg" alt="Gallery Image 3"></div>
+    <div class="gallery-item"><img src="images/1.jpg" alt="Gallery Image 4"></div>
+    <div class="gallery-item"><img src="images/4.jpg" alt="Gallery Image 5"></div>
+    <div class="gallery-item"><img src="images/5.jpg" alt="Gallery Image 6"></div>
+    <div class="gallery-item"><img src="images/6.jpg" alt="Gallery Image 7"></div>
+    <div class="gallery-item"><img src="images/7.jpg" alt="Gallery Image 8"></div>
+    <div class="gallery-item"><img src="images/8.jpg" alt="Gallery Image 9"></div>
+    <div class="gallery-item"><img src="images/9.jpg" alt="Gallery Image 10"></div>
+    <div class="gallery-item"><img src="images/12.jpg" alt="Gallery Image 11"></div>
+    <div class="gallery-item"><img src="images/11.jpg" alt="Gallery Image 12"></div>
+    <div class="gallery-item"><img src="images/13.jpg" alt="Gallery Image 13"></div>
+    <div class="gallery-item"><img src="images/14.jpg" alt="Gallery Image 14"></div>
+    <div class="gallery-item"><img src="images/15.jpg" alt="Gallery Image 15"></div>
+    <div class="gallery-item"><img src="images/16.jpg" alt="Gallery Image 16"></div>
+    <div class="gallery-item"><img src="images/17.jpg" alt="Gallery Image 17"></div>
+    <div class="gallery-item"><img src="images/18.jpg" alt="Gallery Image 18"></div>
+    <div class="gallery-item"><img src="images/19.jpg" alt="Gallery Image 19"></div>
+    <div class="gallery-item"><img src="images/20.jpg" alt="Gallery Image 20"></div>
+    <div class="gallery-item"><img src="images/21.jpg" alt="Gallery Image 21"></div>
+    <div class="gallery-item"><img src="images/22.jpg" alt="Gallery Image 22"></div>
+    <div class="gallery-item"><img src="images/23.jpg" alt="Gallery Image 23"></div>
+    <div class="gallery-item"><img src="images/24.jpg" alt="Gallery Image 24"></div>
+    <div class="gallery-item"><img src="images/25.jpg" alt="Gallery Image 25"></div>
+    <div class="gallery-item"><img src="images/26.jpg" alt="Gallery Image 26"></div>
+    <div class="gallery-item"><img src="images/27.jpg" alt="Gallery Image 27"></div>
+    <div class="gallery-item"><img src="images/28.jpg" alt="Gallery Image 28"></div>
+    <div class="gallery-item"><img src="images/29.jpg" alt="Gallery Image 29"></div>
+    <div class="gallery-item"><img src="images/30.jpg" alt="Gallery Image 30"></div>
+    <div class="gallery-item"><img src="images/31.jpg" alt="Gallery Image 31"></div>
+    <div class="gallery-item"><img src="images/32.jpg" alt="Gallery Image 32"></div>
+    <div class="gallery-item"><img src="images/33.jpg" alt="Gallery Image 33"></div>
+    <div class="gallery-item"><img src="images/35.jpg" alt="Gallery Image 34"></div>
+    <div class="gallery-item"><img src="images/34.jpg" alt="Gallery Image 35"></div>
+    <div class="gallery-item"><img src="images/36.jpg" alt="Gallery Image 36"></div>
+    <div class="gallery-item"><img src="images/38.jpg" alt="Gallery Image 37"></div>
+    <div class="gallery-item"><img src="images/39.jpg" alt="Gallery Image 38"></div>
+    <div class="gallery-item"><img src="images/40.jpg" alt="Gallery Image 39"></div>
+    <div class="gallery-item"><img src="images/41.jpg" alt="Gallery Image 40"></div>
+    <div class="gallery-item"><img src="images/42.jpg" alt="Gallery Image 41"></div>
+    <div class="gallery-item"><img src="images/43.jpg" alt="Gallery Image 42"></div>
+    <div class="gallery-item"><img src="images/37.jpg" alt="Gallery Image 43"></div>
+    <div class="gallery-item"><img src="images/44.jpg" alt="Gallery Image 44"></div>
+    <div class="gallery-item"><img src="images/45.jpg" alt="Gallery Image 45"></div>
+    <div class="gallery-item"><img src="images/46.jpg" alt="Gallery Image 46"></div>
+    <div class="gallery-item"><img src="images/47.jpg" alt="Gallery Image 47"></div>
+    <div class="gallery-item"><img src="images/48.jpg" alt="Gallery Image 48"></div>
+    <div class="gallery-item"><img src="images/49.jpg" alt="Gallery Image 49"></div>
+    <div class="gallery-item"><img src="images/50.jpg" alt="Gallery Image 50"></div>
+    <div class="gallery-item"><img src="images/51.jpg" alt="Gallery Image 51"></div>
+    <div class="gallery-item"><img src="images/52.jpg" alt="Gallery Image 52"></div>
+    <div class="gallery-item"><img src="images/53.jpg" alt="Gallery Image 53"></div>
+    <div class="gallery-item"><img src="images/54.jpg" alt="Gallery Image 54"></div>
+    <div class="gallery-item"><img src="images/55.jpg" alt="Gallery Image 55"></div>
+    <div class="gallery-item"><img src="images/56.jpg" alt="Gallery Image 56"></div>
+    <div class="gallery-item"><img src="images/57.jpg" alt="Gallery Image 57"></div>
+    <div class="gallery-item"><img src="images/58.jpg" alt="Gallery Image 58"></div>
+    <div class="gallery-item"><img src="images/59.jpg" alt="Gallery Image 59"></div>
+    <div class="gallery-item"><img src="images/60.jpg" alt="Gallery Image 60"></div>
+    <div class="gallery-item"><img src="images/61.jpg" alt="Gallery Image 61"></div>
+    <div class="gallery-item"><img src="images/62.jpg" alt="Gallery Image 62"></div>
+    <div class="gallery-item"><img src="images/63.jpg" alt="Gallery Image 63"></div>
+    <div class="gallery-item"><img src="images/64.jpg" alt="Gallery Image 64"></div>
+    <div class="gallery-item"><img src="images/65.jpg" alt="Gallery Image 65"></div>
+    <div class="gallery-item"><img src="images/66.jpg" alt="Gallery Image 66"></div>
+    <div class="gallery-item"><img src="images/67.jpg" alt="Gallery Image 67"></div>
+    <div class="gallery-item"><img src="images/68.jpg" alt="Gallery Image 68"></div>
+    <div class="gallery-item"><img src="images/69.jpg" alt="Gallery Image 69"></div>
+    <div class="gallery-item"><img src="images/70.jpg" alt="Gallery Image 70"></div>
+    <div class="gallery-item"><img src="images/71.jpg" alt="Gallery Image 71"></div>
+    <div class="gallery-item"><img src="images/72.jpg" alt="Gallery Image 72"></div>
+    <!-- Images end -->
+  </div>
+
+  <section class="quick-links">
+  <h2>Quick Links</h2>
+  <div class="links-container">
+   
+    <a href="index.html"><i class="fas fa-home"></i> Back To HomePage</a>
+   
+    
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Gicha Nature Expeditions | All Rights Reserved.</p>
+    <p>Designed & Developed by <a href="https://anthonykaranja.netlify.app" target="_blank">AlphaCode Solutions</a></p>
+  </div>
+</footer>
+
+  <script>
+    // Reveal images when scrolled into view
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      observer.observe(item);
+    });
+  </script>
+
+</body>
+</html>
